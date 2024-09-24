@@ -22,6 +22,22 @@ body {
     border-bottom: 4px solid #0081F8;
 }
 
+
+.searchBar{
+    border-bottom:2.5px solid  #0081F8;
+    text-align: right;
+}
+
+.searchBar input:focus {
+    border: none;     
+    outline: none;   
+}
+
+main{
+    background-color: #1C1C1C;
+}
+
+
 .jumbo{
     background-image: url('../images/jumbotron.jpg');
     background-repeat: no-repeat;
@@ -43,14 +59,80 @@ body {
     transform: translate(50%);
 
 }
-
-.searchBar{
-    border-bottom:2.5px solid  #0081F8;
-    text-align: right;
+footer{
+    .topFooter{
+        background-image: url('../images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+    .topfooterright{
+        background-image: url('../images/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 400px;
+        
+    }
+    .bottomFooter{
+        background-color: #303030;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
-}
-
-.searchBar input:focus {
-    border: none;     
-    outline: none;   
+        img{
+            width: 25px;
+            margin: 5px;
+        }
+    }
+    .footerTitle{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+    
+        a{
+            text-decoration: none;
+            color: #999999;
+            transition: all 0.25s;
+        }
+        a:hover{
+            color: #0081F8;
+        }
+    }
+    .decorationLogo{
+        position: absolute;
+        z-index: 1;
+        width: 34vw;
+        max-width: 500px;
+        top: -25%;
+        right: -10px;
+    }
+    .btnFooter{
+        border: 1px solid #0081F8;
+        background-color:transparent ;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff; 
+        transition: all 0.5s;
+    }
+    .btnFooter:hover{
+        background-color:#0081F8 ;
+    }
+    .ctaFooter{
+        color: #0081F8;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .iconSocial{
+        transition: all 0.2s;
+        text-decoration: none;
+    }
+    .iconSocial:hover{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7441%) hue-rotate(51deg) brightness(116%) contrast(93%);
+    }
 }
