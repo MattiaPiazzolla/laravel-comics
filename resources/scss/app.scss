@@ -60,6 +60,12 @@ main{
 
 }
 
+.comicCover{
+    width: 100%;
+    object-fit: fit;
+    aspect-ratio: 1/1;
+}
+
 .comicsSection{
     .comicTitle{
         font-size: 0.7rem;
@@ -67,7 +73,9 @@ main{
     }
     .comic{
         cursor: pointer;
+
         img{
+            aspect-ratio: 1/1;
             transition: all 0.3s;
         }
         .priceComic{
@@ -78,6 +86,7 @@ main{
             font-weight: 700;
             z-index: 100;
             transition: all 0.5s;
+            color: #fff;
         }
         &:hover{
             img{

@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
     $comic = config('db.comics');  
-    dump($comic);
+
 
     return view('comics', compact('comic'));
 })->name('comics');

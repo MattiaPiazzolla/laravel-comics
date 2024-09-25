@@ -4,7 +4,9 @@
             <div class="d-flex justify-content-between align-items-center">
                 <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="" class="logo p-1">
                 <ul class=" list-unstyled d-flex align-items-center my-0 mx-5">
-                    <li class="px-3"><a class=" text-decoration-none nav-link" href="{{ route('home') }}">
+                    <li class="px-3"><a
+                            class=" text-decoration-none nav-link {{ Route::currentRouteName() === 'home' ? 'active' : '' }}"
+                            href="{{ route('home') }}">
                             characters
                         </a>
                     </li>
