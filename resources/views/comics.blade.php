@@ -5,4 +5,14 @@
             <div class="labelSection">CURRENT SERIES</div>
         </div>
     </div>
+    <div class="row row-cols-lg-6 row-cols-md-4 row-cols-sm-3 row-cols-2 gx-0 comicsSection">
+        @foreach ($comic as $comic)
+            <div class="col p-2 comic position-relative">
+                <p class="position-absolute priceComic">{{ $comic['price'] }}</p>
+                <img src="{{ $comic['thumb'] }}" alt="title" class="comicCover">
+                <p class="comicTitle mb-3 text-uppercase">{{ $comic['title'] }}</p>
+            </div>
+        @endforeach
+
+    </div>
 @endsection
